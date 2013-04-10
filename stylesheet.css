@@ -1,5 +1,5 @@
 /* =============================================================== */
-/* ===============baseballtheme v 1.73 by laaabaseball =========== */
+/* ===============baseballtheme v 1.76 by laaabaseball =========== */
 /*     questions about this theme? just message laaabaseball       */
 /* using something in this theme? Let me know! http://redd.it/vkaqg*/
 /* =============================================================== */
@@ -13,7 +13,7 @@ How To - Upload a picture and name it featured (under new image name)
 CHANGE this padding-top value to correct image height
 ================================================================== */
 .listing-page .titlebox {
-    padding-top: 470px !important;
+    padding-top: 370px !important;
     }
 
 /* PICTURE OF THE WEEK (SIDEBAR IMAGE) INSTRUCTIONS
@@ -41,7 +41,7 @@ its height is 123 pixels and it is at least 1032 pixels wide
 /* ======================== I warned you! ======================== */
 
 .listing-page .titlebox {
-  background-image: url(%%featured%%);
+	background-image: url(%%featured%%);
 	background-position: top;
 	background-repeat: repeat-x;
     }
@@ -464,12 +464,13 @@ div.side div.spacer div.titlebox div.usertext-body div.md h4 {
     }
 
 .hover.pagename.redditname a {
-	color: #2e2e2e;
-	background-color: #ffffdc;
-	padding: 1px;
-	border-radius: 4px;
-	text-shadow: none;
-    }
+color: #2e2e2e;
+background-color: #ffffdc;
+padding: 6px;
+border-top-right-radius: 4px;
+text-shadow: none;
+border-top-left-radius: 4px;
+}
 
 .tagline {
 	font-size:x-small;
@@ -622,7 +623,7 @@ p.tagline a:hover {
     display: block;
     text-align: left;
     vertical-align: bottom;
-    padding: 5px 48px 5px 5px;
+    padding: 5px 48px 0px 5px;
     padding-top: 75px;
     color: #ffffff;
     font-weight: normal;
