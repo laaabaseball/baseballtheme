@@ -1,0 +1,1476 @@
+/* =============================================================== */
+/*===============baseballtheme v 1.2 by laaabaseball ==============*/
+/*     questions about this theme? just message laaabaseball       */
+/* using something in this theme? Let me know! http://redd.it/vkaqg*/
+/* =============================================================== */
+
+/* =============================================================== */
+/* === SUBREDDIT HEADER AND SIDEBAR IMAGE - EDIT IN HERE ==========*/
+
+/* ==============PICTURE OF THE WEEK (SIDEBAR IMAGE)==============*/
+.listing-page .titlebox {
+/* =============================================================== */
+/* How To - Upload a picture and name it featured (under new image name)*/
+/* CHANGE this padding-top value to correct image height*/
+/* =============================================================== */
+  padding-top:312px!important;
+/* =============================================================== */
+}
+.listing-page .titlebox:before {
+/* =============================================================== */
+/* Want a caption for the image? Change text after the word content */
+/* inside the parenthesis making sure to leave the parenthesis intact*/
+/* =============================================================== */
+content:"  ";
+/* =============================================================== */
+}
+/* =============================================================== */
+/* HEADER IMAGE INSTRUCTIONS */
+/* =============================================================== */
+/*For the main image: upload an image called header make sure its height is 123 pixels  */
+/* =============================================================== */
+/*For the background image: upload an image called header-bg make sure  */
+/* its height is 123 pixels and it is at least 1032 pixels wide */
+/* =============================================================== */
+
+
+
+
+/* =============================================================== */
+/* ===== Don't venture below unless you know what you're doing === */
+/* =============================================================== */
+/* =============================================================== */
+/* =============================================================== */
+/* =============================================================== */
+/* =========================I warned you======================== */
+
+.listing-page .titlebox {
+	background-image:url(%%wbc%%);
+	background-position:top;
+	background-repeat:repeat-x;
+}
+.listing-page .titlebox:before {
+	font-weight:700;
+	color:#FFF;
+	background-color:transparent;
+	border-radius:3px;
+	font-size:11px;
+	text-shadow:1px 1px 1px black,-1px -1px 1px black,-1px 1px 1px black,1px -1px 1px #000;
+}
+
+/*new header image*/
+#header {
+/*this is the header image background (the blue one) don't change this*/
+background-image: url(%%header-bg-wbc%%);
+background-repeat: repeat;
+background-position: bottom center;
+height: 141px;
+border: 0;
+font-family: Georgia,serif;
+font-size: 12px;
+background-color: #069;
+}
+#header-bottom-left  {
+/*upload an image called header make sure its height is 123 pixels  */
+background-image: url(%%header-wbc%%);
+height: 123px;
+background-repeat: no-repeat;
+background-position: bottom center;
+}
+/*fucking magic ignore this
+#header:hover {
+background-position: top left;
+}
+*/
+/* reddit logo */
+#header-bottom-left #header-img-a {
+ background: url(%%reddit-logo%%);
+     height: 43px;
+    width: 120px;
+    position: absolute;
+    top: 15px;
+    left: 11px
+    }
+#header-bottom-left #header-img-a img {
+    display: none;
+    }
+/*smaller text size*/
+.link .title {
+font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Verdana,Tahoma,sans-serif;
+line-height: 18px;
+font-size: 14px!important;
+}
+
+#header-bottom-left {
+	width:100%;
+}
+
+.hover.pagename.redditname {
+	display:inline-block;
+	margin-top:103px;
+	margin-left:0px;
+	color:#FFF;
+	background-color:transparent;
+	border-radius:4px;
+	text-shadow:1px 1px 1px black,-1px -1px 1px black,-1px 1px 1px black,1px -1px 1px #000;
+}
+
+.hover.pagename.redditname a {
+	color:#000;
+	background-color:#FFF;
+	padding:2px;
+	border-radius:4px;
+	text-shadow:none;
+}
+/*number of subscriber and users here now*/
+
+ .titlebox .word {
+ display: none
+ }
+ .titlebox .number:after {
+ content: " baseball players"
+ }
+
+.titlebox .users-online span.number:after {
+content: " at bat"
+}
+
+/*sticky menu bar*/
+
+/*hack to enable positioning of child elements*/
+.titlebox form {
+	position: static;
+}
+/*turns top quote in sidebar into menu container*/
+.titlebox blockquote:first-child {
+	border-left: none;
+	position: absolute;
+	z-index: 9999;
+	top: 13px;
+	left: 119px;
+
+
+}
+/*turns first paragraph into menu title*/
+.titlebox blockquote:first-child p:first-child {
+	margin-top: 1px;
+	padding: 1px;
+	float: left;
+	font-size: 11px;
+	font-weight: bold;
+	color: black;
+	display: inline-block;
+	margin-right: .5em;
+	border-radius: 2px;
+	cursor: default;
+	color: #FFF;
+}
+/*turns the lists into menus*/
+.titlebox blockquote ul {
+	float: right;
+	padding: 1px;
+	border: 1px solid #2e2e2e;
+	background-color: #E5E5E5 !important;
+margin:0px;
+	margin-left: 4px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.titlebox blockquote ul:hover {
+	border: 1px solid #EFF7FF;
+	background-color: transparent !important;
+}
+
+.titlebox blockquote ul li {
+	display: none;
+	padding: 2px;
+	text-align: center;
+	font-weight: bold;
+	color: #790001;
+
+}
+
+.titlebox blockquote li a {
+	display: block;
+	font-weight: normal;
+	text-transform: none !important;
+	color: black;
+
+}
+
+.titlebox blockquote ul li:first-child, .titlebox blockquote ul:hover li {
+	display: block;
+	background-color: transparent;
+}
+
+.titlebox blockquote li:first-child {
+	font-size: 12px;
+	font-weight: bold;
+	color: gray;
+	background: transparent;
+	display: inline-block;
+	
+	
+	border: 0px solid #dbdbdb;
+	border-radius: 5px;
+	cursor: default;
+
+}
+/*styling menu items*/
+.titlebox blockquote:first-child ul li:hover {
+	background: #DBDBDB;
+	border-radius: 5px;
+}
+.titlebox blockquote:first-child a {
+padding: 3px;
+font-weight: bold;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+padding-top: 0px;
+}
+.titlebox blockquote li a:hover {
+	color: #000;
+}
+/*custom size for menu sections*/
+.titlebox blockquote ul:nth-of-type(1) {
+background-color: #E5E5E5 !important;
+}
+
+.titlebox blockquote ul:nth-of-type(2) {
+	
+background-color: #E5E5E5 !important;
+
+}
+.titlebox blockquote ul:nth-of-type(3) {
+	
+background-color: #E5E5E5 !important;
+
+}
+
+/* spoiler begins */
+ a[href="/s"] { 
+font-size: 0; cursor: default; visibility: hidden 
+} 
+a[href="/s"]::after { content: attr(title); 
+background: #cee3f8; 
+color: #cee3f8; font-size: small; padding: 0 0 0 0 !important; visibility: visible 
+} a[href="/s"]:hover::after, a[href="/s"]:active::after { color: black }  
+a[href$="/spoiler"] {
+    background: #000 !important;
+    color: #000 !important
+    }
+a[href$="/spoiler"]:hover {
+    color: #FFF !important
+    }
+
+/* awesome tables*/
+.md table {
+    margin-top: 7px !important;
+    margin-bottom: 10px;
+    width:auto;
+    box-shadow: 2px 2px 2px #ccc;
+    border-left: 1px solid #E8E8E8;
+    background-color: white
+    }
+.side .md table{
+ vertical-align: middle;
+text-align:center;
+width: 95% !important;
+}
+.md tr:nth-of-type(odd) {
+    background: #f7f6f6;
+    color: #363636
+    }
+.md tr:nth-of-type(even) {
+    background: #fff;
+    color: #363636
+    }
+.side .md table:nth-of-type(odd) th {
+    border-right: none
+    }
+.md table th {
+    background-color: #369;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: .5em;
+    text-align: center;
+    }
+.side .md table:first-of-type tr:hover {
+    background: transparent !important
+    }
+.md table td {
+border-top: none;
+border-left: none;
+border-bottom: 2px solid #E8E8E8;
+border-right: 2px solid #EEE;
+padding: 2px 15px 2px 0px;
+font-size: .9em;
+color: black;
+}
+.side .md table td {
+border-bottom: 1px solid #E8E8E8;
+border-right: 0px solid #EEE;
+padding: 2px 0px 2px 0px;
+}
+
+.md table a {
+    border: 0px;
+    font-weight: bold;
+    color: #222
+    }
+.side .md table td:nth-of-type(5) {
+    font-weight: bold;
+    font-size: 15px;
+    background: transparent !important;
+    border-left: 1px solid #eee
+    }
+.md table a:hover {
+    color: #0f326a
+    }
+div.side div.spacer div.titlebox div.usertext-body div.md h4 {
+    font-size: 9px;
+    margin-top: -9px;
+    margin-left: 35%;
+    margin-right: 30%;
+    color: #ccc
+    }
+/*sidebar icon hover fix*/
+.side a[href*="/r/"]{
+padding-left:3px;
+}
+/*icons*/
+.title a[href*="mlb.com"]:before {
+	content: url(%%mlb-icon%%) "   ";
+}
+.comment a[href*="mlb.com"] {
+	padding-left: 21px;
+	background: url(%%mlb-icon%%) 0 50% no-repeat;
+}
+.comment a[href*="youtube.com"],.comment a[href*="youtu.be"]  {
+	padding-left: 21px;
+	background: url(%%video%%) 0 50% no-repeat;
+}
+.title a[href*="youtube.com"]:before,.title a[href*="youtu.be"]:before {
+	content: url(%%video%%) "   ";
+}
+.title a[href*="reddit.com/domain"]:before {
+	content:  "   " !important;
+}
+#siteTable .link .usertext-body a[href*="mlb.com"] {
+    padding-left: 21px;
+    background: url(%%mlb-icon%%) 0 50% no-repeat;
+    }
+#siteTable .link .usertext-body a[href*="youtube.com"],#siteTable .link .usertext-body a[href*="youtu.be"] {
+    padding-left: 21px;
+    background: url(%%video%%) 0 50% no-repeat;
+    }
+
+/* Sidebox */
+.titlebox blockquote:first-child a:hover{
+color:#000;
+}
+.sidecontentbox .title h1 {
+display: block;
+}
+.side {
+    background-color: #E5E5E5 !important;
+    padding: 3px;
+    border: 1px solid #AAA;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px
+    }
+.sidecontentbox{
+background-color: #FFF;
+padding: 3px;
+    border: 1px solid #AAA;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+font-size:8.5pt !important
+}
+
+.sidecontentbox ul.content li {
+    font-size: small;
+    margin-bottom: 2px
+    }
+.icon-menu a {
+    background-color: transparent
+    }
+.titlebox {
+    padding: 10px;
+padding-left: 3px !important;
+    background-color: #FFF !important;
+	background-color: #E5E5E5;
+    border: 1px solid #AAA;
+    color: #777;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px
+    }
+.titlebox .bottom {
+    border: 0
+    }
+.titlebox form.toggle {
+    background-color: transparent
+    }
+.titlebox .usertext {
+    margin: 15px 0;
+    line-height: 120%;
+    font-size: small
+    }
+.titlebox .usertext .md {
+    margin: 0;
+    padding: 0;
+    overflow: visible
+    }
+.titlebox .usertext .md h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333
+    }
+
+.md h1, .md h2, .md h3, .md h4, .md h5, .md h6 {
+    font-size: medium;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    border: 0
+    }
+
+
+/*Actual Post changes*/
+/*Spreads the posts out a bit more*/
+p {
+	margin-top: 3px;
+	margin-bottom: 5px
+}
+
+.tagline {
+font-size: x-small;
+}
+
+p.tagline a:hover {
+	color: #00235d
+}
+.domain {
+   font-size:0px;
+color:#FFF;
+}
+.domain a {
+font-size:x-small;
+background-color:white;
+display:inline-block !important;
+ margin-right:.5em;
+ padding:0 2px;
+ border:1px solid #ddd;
+ border-radius:2px;
+}
+.domain a:hover {
+    text-decoration: underline;
+}
+#preview {
+	float: right;
+	width: 20em;
+	margin-right: 10px;
+	margin-top: 3px;
+	margin-bottom: 5px
+}
+
+#preview span {
+	color: #ffffff
+}
+
+#preview #previewbox {
+	border-width: .2em;
+	border-style: none;
+	border-color: #ffffff;
+	padding: 1em
+}
+
+#preview-table > table {
+	border-width: .2em;
+	border-style: dashed;
+	border-color: lightgray;
+	padding: 5px;
+	margin: 5px;
+	width: 100%
+}
+.link .title {
+	font-weight: normal;
+}
+/* fancy comments*/
+.comment .title {
+	margin-top: 10px
+}
+
+.commentarea .panestack-title {
+	display: none !important
+}
+
+.content .menuarea .flat-list .selected a {
+	color: orangered !important
+}
+
+.dropdown.lightdrop .selected {
+	color: #51a738 !important
+}
+
+.nestedlisting .tagline .expand {
+	color: #999999 !important;
+	position: relative !important;
+	overflow: hidden !important
+}
+
+.nestedlisting .tagline .expand:hover {
+	background-color: transparent !important
+}
+
+.comment .collapsed .expand {
+	color: #999999 !important
+}
+
+.comment .collapsed .expand:hover {
+	background-color: transparent !important
+}
+
+.nestedlisting .buttons a {
+	font-weight: normal !important
+}
+/* remove create/submit bar and change colors of submit*/
+.sidebox.create {
+	display: none;
+}
+.sidebox.submit {
+display: none;
+}
+.morelink {
+	background: #2e2e2e;
+	text-align: center;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	border: 1px solid #006;
+	font-size: 150%;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 29px;
+	height: 29px;
+	border-radius: 5px;
+	color: #FFF;
+}
+.morelink a {
+	color: #FFF;
+}
+.morelink a:hover {
+	color: #FFF;
+	background: #369;
+}
+.morelink .nub {
+	display: none;
+}
+/* message the moderators link*/
+.sidecontentbox a.helplink {
+float: right;
+margin-top: 8px;
+color: white;
+}
+/* top menu tabs*/
+.tabmenu li.selected a {
+        border-style: solid;
+    border-width: 0px;
+    color: #FFF;
+    z-index: 100;
+    background-color:#257;
+    }
+.tabmenu li a {
+    -moz-border-radius-topleft: 4px;
+    -webkit-border-top-left-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+     color: #ffffff;
+background-color:#257;
+    
+    }
+.tabmenu li a:hover {
+background-color:#257;
+	
+    }
+.tabmenu li.selected a:hover {
+    background-color:#257;
+    }
+
+.bottommenu {
+	color: #999;
+	font: normal 10px Tahoma,Arial,sans-serif;
+}
+.pagename a{
+color:#FFF;
+}
+.pagename{
+color:#fefefe;
+}
+h1.redditname > a {
+	color: #FFF;
+}
+
+#header-bottom-right {
+	background-color: #E5E5E5;
+	border-style: solid none none solid;
+	border-width: 1px medium medium 1px;
+	border-radius: 4px;
+padding: 0px 0px 0px !important;
+}
+/* adds spacing and a line between posts on the front of subreddit*/
+.content #siteTable .link {
+    margin-bottom: 0px;
+padding-top: 6px;
+padding-bottom: 6px;
+    border-bottom: 1px solid #ececec
+    }
+/* fix transparency in the sidebar and add gold for mod stuff*/
+.sidebox .spacer{
+background: transparent !important;
+}
+.leavemoderator {
+background-color: #FFFDCC!important;
+}
+/* Page Colors */
+#header-bottom-right a {
+    color: #000
+    }
+p {
+    margin-top: 3px;
+    margin-bottom: 5px
+    }
+p.tagline a {
+    color: #616f99
+    }
+p.tagline a:hover {
+    color: #00235d
+    }
+#preview {
+    float: right;
+    width: 20em;
+    margin-right: 10px;
+    margin-top: 3px;
+    margin-bottom: 5px
+    }
+#preview span {
+    color: #ffffff
+    }
+#preview #previewbox {
+    border-width: .2em;
+    border-style: none;
+    border-color: #ffffff;
+    padding: 1em
+    }
+#preview-table > table {
+    border-width: .2em;
+    border-style: dashed;
+    border-color: lightgray;
+    padding: 5px;
+    margin: 5px;
+    width: 100%
+    }
+/* Comments */
+.comment .title {
+    margin-top: 10px
+    }
+.commentarea .panestack-title {
+    display: none !important
+    }
+.content .menuarea .flat-list .selected a {
+    color: orangered !important
+    }
+.dropdown.lightdrop .selected {
+    color: #51a738 !important
+    }
+.nestedlisting .tagline .expand {
+    color: #999999 !important;
+    position: relative !important;
+    overflow: hidden !important
+    }
+.nestedlisting .tagline .expand:hover {
+    background-color: transparent !important
+    }
+.comment .collapsed .expand {
+    color: #999999 !important
+    }
+.comment .collapsed .expand:hover {
+    background-color: transparent !important
+    }
+.nestedlisting .buttons a {
+    font-weight: normal !important
+    }
+.titlebox .md {
+    font-size: 8.5pt !important;
+    font-weight: normal !important
+    }
+.titlebox .usertext-body {
+    border-top: 10px !important;
+    border-bottom: 0px !important
+    }
+.sidebox.create {
+    padding: 10px 0 0 0 !important
+    }
+.sidebox.gold {
+    padding: 10px 0 0 0 !important
+    }
+.sidebox .morelink {
+    -moz-border-radius: 4px !important;
+    -webkit-border-radius: 4px !important
+    }
+.morelink .nub {
+    display: none !important
+    }
+
+/* Search */
+#search {
+    margin: 0px 0px 10px 0px !important;
+    padding: 0px 0px 0px 0px !important
+    }
+#search input[type="text"] {
+    -moz-border-radius: 5px !important;
+    -webkit-border-radius: 5px !important;
+    width: 271px !important;
+    height: 20px !important;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px !important;
+    text-transform: uppercase;
+    color: #999999 !important;
+    background-color: #FFFFFF !important;
+    background-position: 270px 0 !important;
+    background-repeat: no-repeat !important
+    }
+#search input[type="text"]:hover {
+    background-position: 270px -25px !important;
+    background-repeat: no-repeat !important;
+    background-color: #FFFFFF !important
+    }
+#search input[type="text"]:active {
+    background-position: 270px -50px !important;
+    background-repeat: no-repeat !important;
+    background-color: #FFFFFF !important
+    }
+/* Link info (on posts)*/
+.linkinfo {
+    border-top: 1px solid #DDDDDD !important;
+    background-color: #F0F3FC !important;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    border-right: 0 !important;
+    border-bottom: 0 !important;
+    border-left: 0 !important;
+    margin-bottom: 0px !important;
+    padding-top: 10px !important;
+    padding-left: 10px !important
+    }
+.linkinfo .score, .linkinfo .number, .linkinfo .word {
+    font-size: 11px !important;
+    font-weight: normal !important;
+    margin-top: 2px !important;
+    line-height: 150% !important
+    }
+.sidecontentbox.trophy-area {
+    margin-top: -1px !important
+    }
+.sidecontentbox.trophy-area .trophy-table {
+    font-size: 8pt !important
+    }
+.sidecontentbox.trophy-area .trophy-table .trophy-info {
+    max-width: 100px !important
+    }
+.sidecontentbox {
+    margin: 10px 0px 0px 0px !important;
+    padding: 10px 10px 0px 10px !important;
+    border-top: 1px solid #DDDDDD !important
+    }
+.sidecontentbox .content {
+    margin: 0px !important;
+    font-size: 9pt !important;
+    padding: 5px 0 0 0 !important;
+    background-color: transparent !important;
+    border: 0 !important
+    }
+.content .reddit-link-title {
+    color: #000000 !important;
+    font-size: 8pt !important
+    }
+/* RES Fixes*/
+#sr-header-area,#sr-more-link {
+background: #257 !important;
+color:#FFF;
+border: none !important;
+}
+#sr-header-area a{
+color:#FFF;
+}
+#RESShortcutsRight, #RESShortcutsLeft, #RESShortcutsAdd, #RESShortcutsTrash, #RESShortcutsViewport, #RESShortcutsEditContainer {
+color: white;
+background-color: #257 !important;
+}
+/* Link Flair*/
+.linkflair-discuss .linkflairlabel,.linkflairlabel{
+
+}
+.linkflair-discuss .linkflairlabel:before{
+content:url(%%discuss%%) "   ";
+}
+/* User Flair Improvements */
+.side a.flairselectbtn:after{
+color:#000;
+font-weight:bold;
+content:" <-- Select country flag";
+}
+.flairoptionpane {
+background-color:#FFF;
+}
+.flairselector h2:after{
+font-size:10px;
+content: " - Select a country flag, and then click save to add next to your nickname.";
+}
+.flairselector form:before{
+content: "To disable flair, simply uncheck <Show my flair on this reddit> in the sidebar.";
+}
+/* change upvotes and downvotes to hits and strikeouts*/
+div.linkinfo .upvotes span.word {
+    display: none
+    }
+div.linkinfo .upvotes span.number:after {
+    content: " hits"
+    }
+.linkinfo .upvotes {
+    font-size: 80%;
+    }
+div.linkinfo .downvotes span.word {
+    display: none
+    }
+div.linkinfo .downvotes span.number:after {
+       content: " strikeouts"
+    }
+/* Change infobar colors to fit in with current theme*/
+.infobar {
+background-color: #E5E5E5;
+padding: 5px 10px;
+margin: 5px 305px 5px 0px;
+border: 1px solid #2E2E2E;
+font-size: small;
+border-radius: 5px;
+border: 1px solid #AAA;
+}
+/* add border radius to stuff for modern browsers*/
+.usertext-edit textarea{
+border-radius:5px;
+}
+/*fix for non-res users*/
+.drop-choices {
+background-color:#257;
+color:#fff;
+ }
+.drop-choices a.choice:hover {
+ background-color:#369;
+}
+.drop-choices.lightdrop.inuse a{
+background-color:#FFF;
+color:black;
+}
+.drop-choices.lightdrop.inuse a:hover{
+background-color:#000;
+color:#FFF;
+}
+
+/*self posts*/
+.link .usertext .md {
+border:1px solid #E5E5E5;
+}
+.edited-timestamp {
+display: none;
+}
+
+
+/*wiki stuff*/
+.wiki .editlink{
+display:none;
+}
+/*get them subscribed*/
+.content:before {
+    content: " You're not subscribed to /r/wbc yet! Click the subscribe button on the right to add The World Baseball Classic to your frontpage";
+    margin: 4px;
+    color: #2e2e2e
+    }
+.subscriber .content:before{
+    content: " Read the FAQ in the sidebar before posting! " !important
+    }
+.submit-page #newlink:before {
+    content: " NO MEMES! Read the rules in the sidebar!!" !important
+    }
+.side .content:before,.submit-page .content:before{
+content: " " !important;
+}
+.popup {
+    z-index: 900000000000 !important
+    }
+/*submit button link added to sidebar for visibility*/
+.side a[href*="#submitlink"],.side a[href*="#selfpost"]{
+background: #2e2e2e;
+	text-align: center;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	border: 1px solid #006;
+	font-size: 150%;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 29px;
+	height: 39px;
+	border-radius: 5px;
+	color: #FFF;
+padding-left:80px;
+padding-right:80px;
+padding-top:2px;
+padding-bottom:2px;
+width:100%;
+}
+.side a[href*="#selfpost"]{
+padding-right:58px !important;
+padding-left:58px !important;
+}
+.side a[href*="#submitlink"] a,.side a[href*="#selfpost"] a {
+	color: #FFF;
+}
+.side a[href*="#submitlink"]:hover,.side a[href*="#selfpost"]:hover {
+	color: #FFF;
+	background: #369;
+}
+.side .md table td{
+padding:0px !important;
+}
+/* Linkable notification at the top */
+ .content {
+   margin-top: 23px;
+   }
+  .titlebox form {
+  position: static;
+  }
+   .titlebox .usertext-body .md p > em {
+    background-color: #369;
+color:#FEFEFE;
+    border: 0px solid #2e2e2e;
+    position: absolute;
+    top: 68px;
+    left: 2px;
+    z-index: 0;
+    margin: 0;
+    white-space:nowrap;
+padding:2px;
+    padding-left: 5px;
+padding-right: 5px;
+    list-style: none;
+    display: block;
+    overflow: hidden;
+ 	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+    }
+.titlebox .usertext-body .md p > em li{
+margin: 0px;
+}
+.titlebox .usertext-body .md p > em a {
+font-weight:bold;
+color:#FFF;
+}
+
+/* Picture of the Week*/
+/* How To - Upload a picture and name it featured under new image name*/
+/* background position is how it is centered - 
+other values
+left top
+left center
+left bottom
+right top
+right center
+right bottom
+center top
+center center
+center bottom*/
+/* Change padding top value to correct image height*/
+/* Change Text after Picture of the Week:, make sure to keep parenthesis*/
+/*  */
+
+
+/* Report button message */
+.report-button:hover:before {
+    position: absolute;
+    display: block;
+    z-index: 1000;
+    padding: 5px;
+    border: 1px solid #333;
+    background-color: #FFF;
+    content: "Please message us if something you report is not obvious. Reposts are not against the rules, please use downvotes.";
+    text-align: center;
+    font-size: 10px;
+    font-weight: normal;
+    margin-left: 5px;
+    margin-top: 5px
+    }
+/**/
+.side a[href*="/r/baseball/search?q=Picture+of+the+week+thread&restrict_sr=on&sort=new"]{
+display:none;
+}
+.listing-page.loggedin .side a[href*="/r/baseball/search?q=Picture+of+the+week+thread&restrict_sr=on&sort=new"]{
+display:block !important;
+ position: absolute;
+    top: 109px;
+    width: 128px;
+right:17px;
+z-index:999;
+background-color:#369;
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+border:0px solid #E5E5E5;
+color:#FFF;
+font-weight:bold !important;
+padding:-1px;
+}
+
+
+.titlebox{
+margin-top: 18px;
+}
+.wikipage a[href$="/spoiler"]{
+background-color: black !important;
+color:#000 !important;
+}
+.wikipage a[href$="/spoiler"]:hover{
+background-color: white !important;
+}
+
+/* BEGIN SIDEBAR HEADERS */
+
+.titlebox,.sidecontentbox {
+    padding: 10px;
+    background-color: #F0F3FC !important;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px
+    }
+.titlebox .bottom {
+    border: 0
+    }
+.titlebox form.toggle {
+    background-color: transparent
+    }
+.titlebox .usertext {
+    margin: 15px 0;
+    line-height: 120%;
+    font-size: small
+    }
+.titlebox .usertext .md {
+    margin: 0;
+    padding: 0;
+    overflow: visible
+    }
+.titlebox .usertext .md h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000   
+ }
+
+.titlebox .usertext .md > h1, .titlebox .redditname,.sidecontentbox .title h1,.sidecontentbox.collapsible.title h1 {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background-repeat: repeat-x;
+    background-position: top;
+    background-color: #369;
+    color: #fff;
+    padding: 5px 10px;
+    padding-left: 20px;
+    padding-right: 0;
+    margin-right: -10px;
+    margin-left: -15px;
+    border-bottom: 1px solid #369;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    z-index: 100
+    }
+.titlebox .usertext .md > h1:after, .titlebox .redditname:after,.sidecontentbox .title h1:after,.sidecontentbox.collapsible.title h1:after {
+    display: block;
+    content: "";
+    /* Grey Corner */
+    border-color: transparent gray transparent transparent;
+    border-style: solid;
+    border-width: 15px;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    z-index: -1;
+    margin-left: -35px;
+    margin-top: -9px
+    }
+.md h1 {
+    font-size: 15px;
+    font-weight: bold;
+    
+    margin-bottom: 5px;
+    border: 0
+    }
+.md h2, .md h3, .md h4, .md h5 {
+    font-size: small;
+    font-weight: bold;
+    color: black !important;
+    margin-bottom: 5px;
+    border: 0
+    }
+
+
+/* Temporary no participation mode during external subreddit links *(currently disabled
+
+body:not(.subscriber) .arrow
+{ 
+    visibility: hidden !important;
+}
+
+body:not(.subscriber) .usertext-edit,
+body:not(.subscriber) .sidebox.submit,
+body:not(.subscriber) .commentingAs,
+body:not(.subscriber) .markdownEditor, 
+body:not(.subscriber) .report-button,
+body:not(.subscriber) a[onclick*="return reply(this)"],
+body:not(.subscriber) .helplink
+{
+    display: none !important;
+}
+
+body:not(.subscriber) #siteTable:before
+{
+    content: "You must be subscribed to this subreddit to comment or vote.";
+    display: block;
+    max-width: 800px;
+    background-color: #F6E69F;
+    padding: 5px 10px;
+    margin: 5px 305px 5px 0px;
+    border: 1px solid orange;
+    font-size: small;
+}
+
+
+
+body.res:not(.subscriber) div.titlebox > div[style*='display: block !important'] input:before,
+body.res:not(.subscriber) div.titlebox > div[style*='display: block !important'] label:before,
+body.res:not(.subscriber) > div#keyCommandLineWidget > form:before
+{
+    content: 'Subscribe to turn off styles' !important;
+    margin-left: -10000px !important;
+}
+
+
+body.wiki-page:not(.subscriber) span.pageactions a.wikiaction-edit:not(.wikiaction-current),
+body.wiki-page:not(.subscriber) div.wiki-page-content form#editform label[for='reason'],
+body.wiki-page:not(.subscriber) div.wiki-page-content form#editform input#wiki_revision_reason,
+body.wiki-page:not(.subscriber) div.wiki-page-content form#editform input[type='submit']
+{
+    display: none !important;
+}
+*/
+
+.commentarea > .usertext::before {
+content: "Thanks for commenting! Please don't respond to trolls or spammers. Please click the report button or send a modmail.";
+display: block;
+margin-right: 5px;
+background-color: #FFFFDC;
+padding: 10px;
+border: 1px solid #C8C864;
+border-radius: 3px;
+}
+.titlebox .bottom {
+font-size: 0px;
+color: #FFF;
+}
+.titlebox .bottom:before {
+font-size: 10px;
+color: gray;
+content: " ";
+}
+.titlebox .bottom .age {
+font-size: 10px;
+color: gray;
+}
+/* BEGIN FLAIR */
+.collapsed .flair {
+    opacity: 0.4;
+    }
+.tagline {
+    height: 11px;
+    }
+.flair:before {
+    width: 16px;
+    height: 11px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(%%flags%%);
+    background-position: -9999px -9999px;
+    margin-right: 0px;
+    content: ""
+    }
+.flair:hover:before {
+    border-color: whitesmoke
+    }
+.flair {
+    border: none !important;
+    padding: 0px;
+    background: url(%%flags%%);
+    overflow: hidden;
+    line-height: 11px;
+    }
+.flair:not(.flair-special):hover {
+    margin-right: 120px;
+    white-space: nowrap;
+    overflow: visible;
+    }
+.flair-ad{ background-position: 0 0; width: 16px; height: 11px; } 
+.flair-ae{ background-position: -17px 0; width: 16px; height: 11px; } 
+.flair-af{ background-position: -34px 0; width: 16px; height: 11px; } 
+.flair-ag{ background-position: -51px 0; width: 16px; height: 11px; } 
+.flair-ai{ background-position: -68px 0; width: 16px; height: 11px; } 
+.flair-al{ background-position: -85px 0; width: 16px; height: 11px; } 
+.flair-am{ background-position: -102px 0; width: 16px; height: 11px; } 
+.flair-an{ background-position: -119px 0; width: 16px; height: 11px; } 
+.flair-ao{ background-position: -136px 0; width: 16px; height: 11px; } 
+.flair-ar{ background-position: -153px 0; width: 16px; height: 11px; } 
+.flair-as{ background-position: -170px 0; width: 16px; height: 11px; } 
+.flair-at{ background-position: -187px 0; width: 16px; height: 11px; }
+.flair-au{ background-position: -204px 0; width: 16px; height: 11px; } 
+.flair-aw{ background-position: -221px 0; width: 16px; height: 11px; } 
+.flair-ax{ background-position: -238px 0; width: 16px; height: 11px; } 
+.flair-az{ background-position: -255px 0; width: 16px; height: 11px; } 
+.flair-ba{ background-position: -272px 0; width: 16px; height: 11px; } 
+.flair-bb{ background-position: -289px 0; width: 16px; height: 11px; } 
+.flair-bd{ background-position: -306px 0; width: 16px; height: 11px; } 
+.flair-be{ background-position: -323px 0; width: 16px; height: 11px; } 
+.flair-bf{ background-position: -340px 0; width: 16px; height: 11px; } 
+.flair-bg{ background-position: -357px 0; width: 16px; height: 11px; } 
+.flair-bh{ background-position: -374px 0; width: 16px; height: 11px; } 
+.flair-bi{ background-position: -391px 0; width: 16px; height: 11px; } 
+.flair-bj{ background-position: -408px 0; width: 16px; height: 11px; } 
+.flair-bm{ background-position: -425px 0; width: 16px; height: 11px; } 
+.flair-bn{ background-position: -442px 0; width: 16px; height: 11px; } 
+.flair-bo{ background-position: -459px 0; width: 16px; height: 11px; } 
+.flair-br{ background-position: -476px 0; width: 16px; height: 11px; } 
+.flair-bs{ background-position: -493px 0; width: 16px; height: 11px; } 
+.flair-bt{ background-position: -510px 0; width: 16px; height: 11px; } 
+.flair-bv{ background-position: -527px 0; width: 16px; height: 11px; } 
+.flair-bw{ background-position: -544px 0; width: 16px; height: 11px; } 
+.flair-by{ background-position: -561px 0; width: 16px; height: 11px; } 
+.flair-bz{ background-position: -578px 0; width: 16px; height: 11px; } 
+.flair-ca{ background-position: -595px 0; width: 16px; height: 11px; }
+.flair-catalonia{ background-position: -612px 0; width: 16px; height: 11px; } 
+.flair-cc{ background-position: -629px 0; width: 16px; height: 11px; } 
+.flair-cd{ background-position: -646px 0; width: 16px; height: 11px; } 
+.flair-cf{ background-position: -663px 0; width: 16px; height: 11px; } 
+.flair-cg{ background-position: -680px 0; width: 16px; height: 11px; } 
+.flair-ch{ background-position: -697px 0; width: 16px; height: 11px; } 
+.flair-ci{ background-position: -714px 0; width: 16px; height: 11px; } 
+.flair-ck{ background-position: -731px 0; width: 16px; height: 11px; } 
+.flair-cl{ background-position: -748px 0; width: 16px; height: 11px; } 
+.flair-cm{ background-position: -765px 0; width: 16px; height: 11px; } 
+.flair-cn{ background-position: -782px 0; width: 16px; height: 11px; } 
+.flair-co{ background-position: -799px 0; width: 16px; height: 11px; } 
+.flair-cr{ background-position: -816px 0; width: 16px; height: 11px; } 
+.flair-cs{ background-position: -833px 0; width: 16px; height: 11px; } 
+.flair-cu{ background-position: -850px 0; width: 16px; height: 11px; } 
+.flair-cv{ background-position: -867px 0; width: 16px; height: 11px; } 
+.flair-cx{ background-position: -884px 0; width: 16px; height: 11px; } 
+.flair-cy{ background-position: -901px 0; width: 16px; height: 11px; } 
+.flair-cz{ background-position: -918px 0; width: 16px; height: 11px; } 
+.flair-de{ background-position: -935px 0; width: 16px; height: 11px; } 
+.flair-dj{ background-position: -952px 0; width: 16px; height: 11px; } 
+.flair-dk{ background-position: -969px 0; width: 16px; height: 11px; } 
+.flair-dm{ background-position: -986px 0; width: 16px; height: 11px; } 
+.flair-do{ background-position: -1003px 0; width: 16px; height: 11px; }
+.flair-dz{ background-position: -1020px 0; width: 16px; height: 11px; } 
+.flair-ec{ background-position: -1037px 0; width: 16px; height: 11px; } 
+.flair-ee{ background-position: -1054px 0; width: 16px; height: 11px; } 
+.flair-eg{ background-position: -1071px 0; width: 16px; height: 11px; } 
+.flair-eh{ background-position: -1088px 0; width: 16px; height: 11px; } 
+.flair-england{ background-position: -1105px 0; width: 16px; height: 11px; } 
+.flair-er{ background-position: -1122px 0; width: 16px; height: 11px; } 
+.flair-es{ background-position: -1139px 0; width: 16px; height: 11px; } 
+.flair-et{ background-position: -1156px 0; width: 16px; height: 11px; } 
+.flair-europeanunion{ background-position: -1173px 0; width: 16px; height: 11px; } 
+.flair-fam{ background-position: -1190px 0; width: 16px; height: 11px; } 
+.flair-fi{ background-position: -1207px 0; width: 16px; height: 11px; } 
+.flair-fj{ background-position: -1224px 0; width: 16px; height: 11px; } 
+.flair-fk{ background-position: -1241px 0; width: 16px; height: 11px; } 
+.flair-fm{ background-position: -1258px 0; width: 16px; height: 11px; } 
+.flair-fo{ background-position: -1275px 0; width: 16px; height: 11px; } 
+.flair-fr{ background-position: -1292px 0; width: 16px; height: 11px; } 
+.flair-ga{ background-position: -1309px 0; width: 16px; height: 11px; } 
+.flair-gb{ background-position: -1326px 0; width: 16px; height: 11px; } 
+.flair-gd{ background-position: -1343px 0; width: 16px; height: 11px; } 
+.flair-ge{ background-position: -1360px 0; width: 16px; height: 11px; } 
+.flair-gf{ background-position: -1377px 0; width: 16px; height: 11px; } 
+.flair-gh{ background-position: -1394px 0; width: 16px; height: 11px; } 
+.flair-gi{ background-position: -1411px 0; width: 16px; height: 11px; }
+.flair-gl{ background-position: -1428px 0; width: 16px; height: 11px; } 
+.flair-gm{ background-position: -1445px 0; width: 16px; height: 11px; } 
+.flair-gn{ background-position: -1462px 0; width: 16px; height: 11px; } 
+.flair-gp{ background-position: -1479px 0; width: 16px; height: 11px; } 
+.flair-gq{ background-position: -1496px 0; width: 16px; height: 11px; } 
+.flair-gr{ background-position: -1513px 0; width: 16px; height: 11px; } 
+.flair-gs{ background-position: -1530px 0; width: 16px; height: 11px; } 
+.flair-gt{ background-position: -1547px 0; width: 16px; height: 11px; } 
+.flair-gu{ background-position: -1564px 0; width: 16px; height: 11px; } 
+.flair-gw{ background-position: -1581px 0; width: 16px; height: 11px; } 
+.flair-gy{ background-position: -1598px 0; width: 16px; height: 11px; } 
+.flair-hk{ background-position: -1615px 0; width: 16px; height: 11px; } 
+.flair-hm{ background-position: -1632px 0; width: 16px; height: 11px; } 
+.flair-hn{ background-position: -1649px 0; width: 16px; height: 11px; } 
+.flair-hr{ background-position: -1666px 0; width: 16px; height: 11px; } 
+.flair-ht{ background-position: -1683px 0; width: 16px; height: 11px; } 
+.flair-hu{ background-position: -1700px 0; width: 16px; height: 11px; } 
+.flair-id{ background-position: -1717px 0; width: 16px; height: 11px; } 
+.flair-ie{ background-position: -1734px 0; width: 16px; height: 11px; } 
+.flair-il{ background-position: -1751px 0; width: 16px; height: 11px; } 
+.flair-in{ background-position: -1768px 0; width: 16px; height: 11px; } 
+.flair-io{ background-position: -1785px 0; width: 16px; height: 11px; } 
+.flair-iq{ background-position: -1802px 0; width: 16px; height: 11px; } 
+.flair-ir{ background-position: -1819px 0; width: 16px; height: 11px; }
+.flair-is{ background-position: -1836px 0; width: 16px; height: 11px; } 
+.flair-it{ background-position: -1853px 0; width: 16px; height: 11px; } 
+.flair-jm{ background-position: -1870px 0; width: 16px; height: 11px; } 
+.flair-jo{ background-position: -1887px 0; width: 16px; height: 11px; } 
+.flair-jp{ background-position: -1904px 0; width: 16px; height: 11px; } 
+.flair-ke{ background-position: -1921px 0; width: 16px; height: 11px; } 
+.flair-kg{ background-position: -1938px 0; width: 16px; height: 11px; } 
+.flair-kh{ background-position: -1955px 0; width: 16px; height: 11px; } 
+.flair-ki{ background-position: -1972px 0; width: 16px; height: 11px; } 
+.flair-km{ background-position: -1989px 0; width: 16px; height: 11px; } 
+.flair-kn{ background-position: 0 -12px; width: 16px; height: 11px; } 
+.flair-kp{ background-position: -17px -12px; width: 16px; height: 11px; } 
+.flair-kr{ background-position: -34px -12px; width: 16px; height: 11px; } 
+.flair-kw{ background-position: -51px -12px; width: 16px; height: 11px; } 
+.flair-ky{ background-position: -68px -12px; width: 16px; height: 11px; } 
+.flair-kz{ background-position: -85px -12px; width: 16px; height: 11px; } 
+.flair-la{ background-position: -102px -12px; width: 16px; height: 11px; } 
+.flair-lb{ background-position: -119px -12px; width: 16px; height: 11px; } 
+.flair-lc{ background-position: -136px -12px; width: 16px; height: 11px; } 
+.flair-li{ background-position: -153px -12px; width: 16px; height: 11px; } 
+.flair-lk{ background-position: -170px -12px; width: 16px; height: 11px; } 
+.flair-lr{ background-position: -187px -12px; width: 16px; height: 11px; } 
+.flair-ls{ background-position: -204px -12px; width: 16px; height: 11px; } 
+.flair-lt{ background-position: -221px -12px; width: 16px; height: 11px; }
+.flair-lu{ background-position: -238px -12px; width: 16px; height: 11px; } 
+.flair-lv{ background-position: -255px -12px; width: 16px; height: 11px; } 
+.flair-ly{ background-position: -272px -12px; width: 16px; height: 11px; } 
+.flair-ma{ background-position: -289px -12px; width: 16px; height: 11px; } 
+.flair-mc{ background-position: -306px -12px; width: 16px; height: 11px; } 
+.flair-md{ background-position: -323px -12px; width: 16px; height: 11px; } 
+.flair-me{ background-position: -340px -12px; width: 16px; height: 12px; } 
+.flair-mg{ background-position: -357px -12px; width: 16px; height: 11px; } 
+.flair-mh{ background-position: -374px -12px; width: 16px; height: 11px; } 
+.flair-mk{ background-position: -391px -12px; width: 16px; height: 11px; } 
+.flair-ml{ background-position: -408px -12px; width: 16px; height: 11px; } 
+.flair-mm{ background-position: -425px -12px; width: 16px; height: 11px; } 
+.flair-mn{ background-position: -442px -12px; width: 16px; height: 11px; } 
+.flair-mo{ background-position: -459px -12px; width: 16px; height: 11px; } 
+.flair-mp{ background-position: -476px -12px; width: 16px; height: 11px; } 
+.flair-mq{ background-position: -493px -12px; width: 16px; height: 11px; } 
+.flair-mr{ background-position: -510px -12px; width: 16px; height: 11px; } 
+.flair-ms{ background-position: -527px -12px; width: 16px; height: 11px; } 
+.flair-mt{ background-position: -544px -12px; width: 16px; height: 11px; } 
+.flair-mu{ background-position: -561px -12px; width: 16px; height: 11px; } 
+.flair-mv{ background-position: -578px -12px; width: 16px; height: 11px; } 
+.flair-mw{ background-position: -595px -12px; width: 16px; height: 11px; } 
+.flair-mx{ background-position: -612px -12px; width: 16px; height: 11px; } 
+.flair-my{ background-position: -629px -12px; width: 16px; height: 11px; }
+.flair-mz{ background-position: -646px -12px; width: 16px; height: 11px; } 
+.flair-na{ background-position: -663px -12px; width: 16px; height: 11px; } 
+.flair-nc{ background-position: -680px -12px; width: 16px; height: 11px; } 
+.flair-ne{ background-position: -697px -12px; width: 16px; height: 11px; } 
+.flair-nf{ background-position: -714px -12px; width: 16px; height: 11px; } 
+.flair-ng{ background-position: -731px -12px; width: 16px; height: 11px; } 
+.flair-ni{ background-position: -748px -12px; width: 16px; height: 11px; } 
+.flair-nl{ background-position: -765px -12px; width: 16px; height: 11px; } 
+.flair-no{ background-position: -782px -12px; width: 16px; height: 11px; } 
+.flair-np{ background-position: -799px -12px; width: 16px; height: 11px; } 
+.flair-nr{ background-position: -816px -12px; width: 16px; height: 11px; } 
+.flair-nu{ background-position: -833px -12px; width: 16px; height: 11px; } 
+.flair-nz{ background-position: -850px -12px; width: 16px; height: 11px; } 
+.flair-om{ background-position: -867px -12px; width: 16px; height: 11px; } 
+.flair-pa{ background-position: -884px -12px; width: 16px; height: 11px; } 
+.flair-pe{ background-position: -901px -12px; width: 16px; height: 11px; } 
+.flair-pf{ background-position: -918px -12px; width: 16px; height: 11px; } 
+.flair-pg{ background-position: -935px -12px; width: 16px; height: 11px; } 
+.flair-ph{ background-position: -952px -12px; width: 16px; height: 11px; } 
+.flair-pk{ background-position: -969px -12px; width: 16px; height: 11px; } 
+.flair-pl{ background-position: -986px -12px; width: 16px; height: 11px; } 
+.flair-pm{ background-position: -1003px -12px; width: 16px; height: 11px; } 
+.flair-pn{ background-position: -1020px -12px; width: 16px; height: 11px; } 
+.flair-pr{ background-position: -1037px -12px; width: 16px; height: 11px; }
+.flair-ps{ background-position: -1054px -12px; width: 16px; height: 11px; } 
+.flair-pt{ background-position: -1071px -12px; width: 16px; height: 11px; } 
+.flair-pw{ background-position: -1088px -12px; width: 16px; height: 11px; } 
+.flair-py{ background-position: -1105px -12px; width: 16px; height: 11px; } 
+.flair-qa{ background-position: -1122px -12px; width: 16px; height: 11px; } 
+.flair-re{ background-position: -1139px -12px; width: 16px; height: 11px; } 
+.flair-ro{ background-position: -1156px -12px; width: 16px; height: 11px; } 
+.flair-rs{ background-position: -1173px -12px; width: 16px; height: 11px; } 
+.flair-ru{ background-position: -1190px -12px; width: 16px; height: 11px; } 
+.flair-rw{ background-position: -1207px -12px; width: 16px; height: 11px; } 
+.flair-sa{ background-position: -1224px -12px; width: 16px; height: 11px; } 
+.flair-sb{ background-position: -1241px -12px; width: 16px; height: 11px; } 
+.flair-sc{ background-position: -1258px -12px; width: 16px; height: 11px; } 
+.flair-scotland{ background-position: -1275px -12px; width: 16px; height: 11px; } 
+.flair-sd{ background-position: -1292px -12px; width: 16px; height: 11px; } 
+.flair-se{ background-position: -1309px -12px; width: 16px; height: 11px; } 
+.flair-sg{ background-position: -1326px -12px; width: 16px; height: 11px; } 
+.flair-sh{ background-position: -1343px -12px; width: 16px; height: 11px; } 
+.flair-si{ background-position: -1360px -12px; width: 16px; height: 11px; } 
+.flair-sj{ background-position: -1377px -12px; width: 16px; height: 11px; } 
+.flair-sk{ background-position: -1394px -12px; width: 16px; height: 11px; } 
+.flair-sl{ background-position: -1411px -12px; width: 16px; height: 11px; } 
+.flair-sm{ background-position: -1428px -12px; width: 16px; height: 11px; } 
+.flair-sn{ background-position: -1445px -12px; width: 16px; height: 11px; }
+.flair-so{ background-position: -1462px -12px; width: 16px; height: 11px; } 
+.flair-sr{ background-position: -1479px -12px; width: 16px; height: 11px; } 
+.flair-st{ background-position: -1496px -12px; width: 16px; height: 11px; } 
+.flair-sv{ background-position: -1513px -12px; width: 16px; height: 11px; } 
+.flair-sy{ background-position: -1530px -12px; width: 16px; height: 11px; } 
+.flair-sz{ background-position: -1547px -12px; width: 16px; height: 11px; } 
+.flair-tc{ background-position: -1564px -12px; width: 16px; height: 11px; } 
+.flair-td{ background-position: -1581px -12px; width: 16px; height: 11px; } 
+.flair-tf{ background-position: -1598px -12px; width: 16px; height: 11px; } 
+.flair-tg{ background-position: -1615px -12px; width: 16px; height: 11px; } 
+.flair-th{ background-position: -1632px -12px; width: 16px; height: 11px; } 
+.flair-tj{ background-position: -1649px -12px; width: 16px; height: 11px; } 
+.flair-tk{ background-position: -1666px -12px; width: 16px; height: 11px; } 
+.flair-tl{ background-position: -1683px -12px; width: 16px; height: 11px; } 
+.flair-tm{ background-position: -1700px -12px; width: 16px; height: 11px; } 
+.flair-tn{ background-position: -1717px -12px; width: 16px; height: 11px; } 
+.flair-to{ background-position: -1734px -12px; width: 16px; height: 11px; } 
+.flair-tr{ background-position: -1751px -12px; width: 16px; height: 11px; } 
+.flair-tt{ background-position: -1768px -12px; width: 16px; height: 11px; } 
+.flair-tv{ background-position: -1785px -12px; width: 16px; height: 11px; } 
+.flair-tw{ background-position: -1802px -12px; width: 16px; height: 11px; } 
+.flair-tz{ background-position: -1819px -12px; width: 16px; height: 11px; } 
+.flair-ua{ background-position: -1836px -12px; width: 16px; height: 11px; } 
+.flair-ug{ background-position: -1853px -12px; width: 16px; height: 11px; }
+.flair-um{ background-position: -1870px -12px; width: 16px; height: 11px; } 
+.flair-us{ background-position: -1887px -12px; width: 16px; height: 11px; } 
+.flair-uy{ background-position: -1904px -12px; width: 16px; height: 11px; } 
+.flair-uz{ background-position: -1921px -12px; width: 16px; height: 11px; } 
+.flair-va{ background-position: -1938px -12px; width: 16px; height: 11px; } 
+.flair-vc{ background-position: -1955px -12px; width: 16px; height: 11px; } 
+.flair-ve{ background-position: -1972px -12px; width: 16px; height: 11px; } 
+.flair-vg{ background-position: -1989px -12px; width: 16px; height: 11px; } 
+.flair-vi{ background-position: 0 -25px; width: 16px; height: 11px; } 
+.flair-vn{ background-position: -17px -25px; width: 16px; height: 11px; } 
+.flair-vu{ background-position: -34px -25px; width: 16px; height: 11px; } 
+.flair-wales{ background-position: -51px -25px; width: 16px; height: 11px; } 
+.flair-wf{ background-position: -68px -25px; width: 16px; height: 11px; } 
+.flair-ws{ background-position: -85px -25px; width: 16px; height: 11px; } 
+.flair-ye{ background-position: -102px -25px; width: 16px; height: 11px; } 
+.flair-yt{ background-position: -119px -25px; width: 16px; height: 11px; } 
+.flair-za{ background-position: -136px -25px; width: 16px; height: 11px; } 
+.flair-zm{ background-position: -153px -25px; width: 16px; height: 11px; } 
+.flair-zw{ background-position: -170px -25px; width: 16px; height: 11px; }
